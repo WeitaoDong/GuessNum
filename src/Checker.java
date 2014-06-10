@@ -16,17 +16,16 @@ public class Checker {
         String result = "miss";
            for(Integer loc:location){
            if (Num==loc){
-                   location.remove(loc);
                     result ="hit";
-                    NumOfGuess++;
                     System.out.println(location);
                     System.out.println("猜中了一个");
-                } else {
-                    NumOfGuess++;
-
                 }
 
         }
+        if (result=="hit") {
+            location.remove(Num);
+        }
+        NumOfGuess++;
         return result;
     }
     public boolean Status(){

@@ -5,10 +5,10 @@ import java.util.ArrayList;
  */
 public class Main {
     public static void main(String[] args) {
-        SetNum a = new SetNum();
+        SetNum setNum = new SetNum();
         Checker b = new Checker();
         Input c =new Input();
-        b.SetNumber( a.SetNum());
+        b.SetNumber( setNum.SetNum());
 
         while (!b.Status()==true){
             c.UserInput();
@@ -22,7 +22,6 @@ public class Main {
             }else {
                  System.out.println("你没猜对啊");
              }
-
 
         }
 
